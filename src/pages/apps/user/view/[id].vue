@@ -2,6 +2,7 @@
 import { useUserListStore } from '@/views/apps/user/useUserListStore'
 import UserBioPanel from '@/views/apps/user/view/UserBioPanel.vue'
 import UserTabOverview from '@/views/apps/user/view/UserTabOverview.vue'
+import UserTabSpecial from '@/views/apps/user/view/UserTabSpecial.vue'
 
 const userListStore = useUserListStore()
 const route = useRoute()
@@ -12,6 +13,10 @@ const tabs = [
   {
     icon: 'mdi-account-outline',
     title: '기본정보',
+  },
+  {
+    icon: 'mdi-alert-circle-outline',
+    title: '특이사항',
   },
 ]
 
@@ -61,6 +66,10 @@ userListStore.fetchUser(Number(route.params.id)).then(response => {
       >
         <VWindowItem>
           <UserTabOverview :user-data="userData" />
+        </VWindowItem>
+
+        <VWindowItem>
+          <UserTabSpecial :user-data="userData" />
         </VWindowItem>
       </VWindow>
     </VCol>

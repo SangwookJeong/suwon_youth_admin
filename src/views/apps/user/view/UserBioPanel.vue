@@ -187,13 +187,6 @@ const resolveDeptVariant = dept => {
               </VListItemTitle>
             </VListItem>
 
-            <!-- 인적사항(비고) -->
-            <VListItem v-if="props.userData.remarks">
-              <VListItemTitle>
-                <span class="text-sm font-weight-medium">비고: </span>
-                <span class="text-body-2">{{ props.userData.remarks }}</span>
-              </VListItemTitle>
-            </VListItem>
           </VList>
         </VCardText>
 

@@ -19,7 +19,6 @@ const resolveDeptVariant = dept => {
   return { color: 'secondary' }
 }
 
-const currentYear = new Date().getFullYear()
 </script>
 
 <template>
@@ -132,51 +131,6 @@ const currentYear = new Date().getFullYear()
             </VCol>
           </VRow>
         </VCardText>
-      </VCard>
-    </VCol>
-
-    <!-- 연도별 부서 이력 -->
-    <VCol cols="12">
-      <VCard title="연도별 부서 이력">
-        <VDivider />
-        <VTable class="text-no-wrap">
-          <thead>
-            <tr>
-              <th scope="col">연도</th>
-              <th scope="col">부서</th>
-              <th scope="col">비고</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              v-for="item in [...(props.userData.departmentHistory ?? [])].reverse()"
-              :key="item.year"
-            >
-              <td class="font-weight-medium">
-                {{ item.year }}
-                <VChip
-                  v-if="item.year === currentYear"
-                  color="primary"
-                  size="x-small"
-                  class="ms-2"
-                >
-                  현재
-                </VChip>
-              </td>
-              <td>
-                <VChip
-                  :color="resolveDeptVariant(item.department).color"
-                  size="small"
-                >
-                  {{ item.department }}
-                </VChip>
-              </td>
-              <td class="text-medium-emphasis">
-                {{ item.year === currentYear ? '재적 중' : '이전 소속' }}
-              </td>
-            </tr>
-          </tbody>
-        </VTable>
       </VCard>
     </VCol>
 

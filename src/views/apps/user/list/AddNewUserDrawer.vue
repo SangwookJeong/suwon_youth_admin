@@ -99,7 +99,7 @@ const onSubmit = () => {
         remarks: remarks.value,
         email: '',
         username: '',
-        role: 'subscriber',
+        role: 'officer',
         status: 'active',
       })
       emit('update:isDrawerOpen', false)
