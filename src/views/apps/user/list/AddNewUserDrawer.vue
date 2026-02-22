@@ -49,6 +49,7 @@ const occupation = ref()
 const workplaceName = ref('')
 const address = ref('')
 const remarks = ref('')
+const role = ref('ROLE_SISTER_SECRETARY')
 
 const departments = ['믿음부', '소망부', '사랑부', '은혜부']
 const parishes = ['1교구', '2교구', '3교구', '4교구']
@@ -59,6 +60,14 @@ const bsOptions = [
 const serviceTeams = ['찬양팀', '봉사팀', '예배팀', '전도팀', '행정팀']
 const collegeTeams = ['A팀', 'B팀', 'C팀', 'D팀']
 const occupations = ['학생', '직장인']
+const roleOptions = [
+  { title: '총무단', value: 'ROLE_SISTER_SECRETARY' },
+  { title: '자매차장단', value: 'ROLE_SISTER_DEPUTY' },
+  { title: '차장단', value: 'ROLE_DEPUTY' },
+  { title: '부장단', value: 'ROLE_DIRECTOR' },
+  { title: '회장단', value: 'ROLE_PRESIDENCY' },
+  { title: '전도인', value: 'ROLE_EVANGELIST' },
+]
 
 // 👉 드로어 닫기
 const closeNavigationDrawer = () => {
@@ -67,6 +76,7 @@ const closeNavigationDrawer = () => {
     refForm.value?.reset()
     refForm.value?.resetValidation()
     avatarPreview.value = ''
+    role.value = 'ROLE_SISTER_SECRETARY'
   })
 }
 
@@ -99,7 +109,7 @@ const onSubmit = () => {
         remarks: remarks.value,
         email: '',
         username: '',
-        role: 'officer',
+        role: role.value,
         status: 'active',
       })
       emit('update:isDrawerOpen', false)
@@ -306,6 +316,15 @@ const handleDrawerModelValueUpdate = val => {
                   :items="bsOptions"
                   clearable
                   clear-icon="mdi-close"
+                />
+              </VCol>
+
+              <!-- 역할 -->
+              <VCol cols="12">
+                <VSelect
+                  v-model="role"
+                  label="역할"
+                  :items="roleOptions"
                 />
               </VCol>
 

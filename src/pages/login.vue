@@ -1,7 +1,6 @@
 <script setup>
 import { VForm } from 'vuetify/components'
 import { useAppAbility } from '@/plugins/casl/useAppAbility'
-import AuthProvider from '@/views/pages/authentication/AuthProvider.vue'
 import axios from '@axios'
 import { useGenerateImageVariant } from '@core/composable/useGenerateImageVariant'
 import tree from '@images/pages/tree.png'
@@ -67,15 +66,6 @@ const onSubmit = () => {
 
 <template>
   <div>
-    <!-- Title and Logo -->
-    <div class="auth-logo d-flex align-start gap-x-3">
-      <VNodeRenderer :nodes="themeConfig.app.logo" />
-
-      <h1 class="font-weight-medium leading-normal text-2xl text-uppercase">
-        {{ themeConfig.app.title }}
-      </h1>
-    </div>
-
     <VRow
       no-gutters
       class="auth-wrapper"
@@ -111,12 +101,12 @@ const onSubmit = () => {
           class="mt-12 mt-sm-0 pa-4"
         >
           <VCardText>
-            <h5 class="text-h5 mb-1">
-              Welcome to {{ themeConfig.app.title }}! 👋🏻
-            </h5>
-            <p class="mb-0">
-              Please sign-in to your account and start the adventure
-            </p>
+            <div class="d-flex align-center gap-x-3 mb-4">
+              <VNodeRenderer :nodes="themeConfig.app.logo" />
+              <h1 class="font-weight-medium leading-normal text-2xl text-uppercase">
+                {{ themeConfig.app.title }}
+              </h1>
+            </div>
           </VCardText>
           <VCardText>
             <VAlert
@@ -141,7 +131,7 @@ const onSubmit = () => {
                 <VCol cols="12">
                   <VTextField
                     v-model="email"
-                    label="Email"
+                    label="이메일"
                     type="email"
                     :rules="[requiredValidator, emailValidator]"
                     :error-messages="errors.email"
@@ -152,7 +142,7 @@ const onSubmit = () => {
                 <VCol cols="12">
                   <VTextField
                     v-model="password"
-                    label="Password"
+                    label="비밀번호"
                     :rules="[requiredValidator]"
                     :type="isPasswordVisible ? 'text' : 'password'"
                     :error-messages="errors.password"
@@ -163,13 +153,13 @@ const onSubmit = () => {
                   <div class="d-flex align-center flex-wrap justify-space-between mt-1 mb-4">
                     <VCheckbox
                       v-model="rememberMe"
-                      label="Remember me"
+                      label="로그인 유지"
                     />
                     <RouterLink
                       class="text-primary ms-2 mb-1"
                       :to="{ name: 'forgot-password' }"
                     >
-                      Forgot Password?
+                      비밀번호 찾기
                     </RouterLink>
                   </div>
 
@@ -177,7 +167,7 @@ const onSubmit = () => {
                     block
                     type="submit"
                   >
-                    Login
+                    로그인
                   </VBtn>
                 </VCol>
 
@@ -186,30 +176,15 @@ const onSubmit = () => {
                   cols="12"
                   class="text-center"
                 >
-                  <span>New on our platform?</span>
+                  <span>계정이 없으십니까?</span>
                   <RouterLink
                     class="text-primary ms-2"
                     :to="{ name: 'register' }"
                   >
-                    Create an account
+                    계정 생성하기
                   </RouterLink>
                 </VCol>
-                <VCol
-                  cols="12"
-                  class="d-flex align-center"
-                >
-                  <VDivider />
-                  <span class="mx-4">or</span>
-                  <VDivider />
-                </VCol>
 
-                <!-- auth providers -->
-                <VCol
-                  cols="12"
-                  class="text-center"
-                >
-                  <AuthProvider />
-                </VCol>
               </VRow>
             </VForm>
           </VCardText>

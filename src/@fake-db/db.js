@@ -7,6 +7,7 @@ import './pages/help-center'
 import './pages/profile'
 
 // Apps
+import './apps/attendance'
 import './apps/calendar'
 import './apps/chat'
 import './apps/email'

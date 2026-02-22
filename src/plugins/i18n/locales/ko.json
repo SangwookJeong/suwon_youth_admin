@@ -1,0 +1,28 @@
+{
+  "$vuetify": {
+    "badge": "배지",
+    "pagination": {
+      "ariaLabel": {
+        "root": "페이지 네비게이션",
+        "previous": "이전 페이지",
+        "next": "다음 페이지",
+        "currentPage": "현재 페이지",
+        "page": "페이지"
+      }
+    },
+    "input": {
+      "clear": "지우기",
+      "appendAction": "추가 작업",
+      "prependAction": "앞 작업",
+      "counterSize": "글자 수"
+    },
+    "fileInput": {
+      "counterSize": "파일 수"
+    },
+    "rating": {
+      "ariaLabel": {
+        "item": "항목"
+      }
+    }
+  }
+}

@@ -31,6 +31,13 @@ export default [
     children: [
       { title: '성도목록', to: 'apps-user-list' },
       { title: '성도상세', to: { name: 'apps-user-view-id', params: { id: 21 } } },
+      {
+        title: '출결관리',
+        children: [
+          { title: '임원출결', to: 'apps-attendance-officer' },
+          { title: '청년회전체', to: 'apps-attendance-all' },
+        ],
+      },
     ],
   },
   {

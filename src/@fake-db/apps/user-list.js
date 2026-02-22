@@ -35,7 +35,7 @@ const users = [
     parish: '1교구',
     email: 'kminjun@example.com',
     username: 'kminjun',
-    role: 'admin',
+    role: 'ROLE_PRESIDENCY',
     status: 'active',
   },
   {
@@ -64,7 +64,7 @@ const users = [
     parish: '2교구',
     email: 'lsy@example.com',
     username: 'lseoyeon',
-    role: 'admin',
+    role: 'ROLE_PRESIDENCY',
     status: 'active',
   },
   {
@@ -94,7 +94,7 @@ const users = [
     parish: '1교구',
     email: 'pjh@example.com',
     username: 'parkjiho',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'active',
   },
   {
@@ -123,7 +123,7 @@ const users = [
     parish: '3교구',
     email: 'csua@example.com',
     username: 'choiSua',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'inactive',
   },
   {
@@ -153,7 +153,7 @@ const users = [
     parish: '2교구',
     email: 'jdh@example.com',
     username: 'jungDH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -181,7 +181,7 @@ const users = [
     parish: '4교구',
     email: 'khe@example.com',
     username: 'kangHE',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -210,7 +210,7 @@ const users = [
     parish: '1교구',
     email: 'jms@example.com',
     username: 'choMS',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -240,7 +240,7 @@ const users = [
     parish: '3교구',
     email: 'yjw@example.com',
     username: 'yoonJW',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'active',
   },
   {
@@ -269,7 +269,7 @@ const users = [
     parish: '2교구',
     email: 'lsh@example.com',
     username: 'limSH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -299,7 +299,7 @@ const users = [
     parish: '4교구',
     email: 'hyr@example.com',
     username: 'hanYR',
-    role: 'manager',
+    role: 'ROLE_SISTER_DEPUTY',
     status: 'inactive',
   },
   {
@@ -328,7 +328,7 @@ const users = [
     parish: '1교구',
     email: 'ojh@example.com',
     username: 'ohJH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'inactive',
   },
   {
@@ -356,7 +356,7 @@ const users = [
     parish: '3교구',
     email: 'scw@example.com',
     username: 'shinCW',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -385,7 +385,7 @@ const users = [
     parish: '2교구',
     email: 'kwjh@example.com',
     username: 'kwonJH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'inactive',
   },
   {
@@ -415,7 +415,7 @@ const users = [
     parish: '4교구',
     email: 'hsh@example.com',
     username: 'hwangSH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -445,7 +445,7 @@ const users = [
     parish: '1교구',
     email: 'smj@example.com',
     username: 'songMJ',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'active',
   },
   {
@@ -473,7 +473,7 @@ const users = [
     parish: '3교구',
     email: 'yhl@example.com',
     username: 'youHL',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -503,7 +503,7 @@ const users = [
     parish: '2교구',
     email: 'jsm@example.com',
     username: 'jeonSM',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'active',
   },
   {
@@ -532,7 +532,7 @@ const users = [
     parish: '4교구',
     email: 'njs@example.com',
     username: 'namJS',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -562,7 +562,7 @@ const users = [
     parish: '1교구',
     email: 'sjy@example.com',
     username: 'seoJY',
-    role: 'leader',
+    role: 'ROLE_DIRECTOR',
     status: 'active',
   },
   {
@@ -591,7 +591,7 @@ const users = [
     parish: '3교구',
     email: 'bej@example.com',
     username: 'baeEJ',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'inactive',
   },
   {
@@ -621,7 +621,7 @@ const users = [
     parish: '2교구',
     email: 'hmw@example.com',
     username: 'hongMW',
-    role: 'leader',
+    role: 'ROLE_DIRECTOR',
     status: 'active',
   },
   {
@@ -650,7 +650,7 @@ const users = [
     parish: '4교구',
     email: 'msy@example.com',
     username: 'moonSY',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'inactive',
   },
   {
@@ -678,7 +678,7 @@ const users = [
     parish: '1교구',
     email: 'rjw@example.com',
     username: 'ryuJW',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -708,7 +708,7 @@ const users = [
     parish: '3교구',
     email: 'asb@example.com',
     username: 'anSB',
-    role: 'leader',
+    role: 'ROLE_DIRECTOR',
     status: 'pending',
   },
   {
@@ -738,7 +738,7 @@ const users = [
     parish: '2교구',
     email: 'gty@example.com',
     username: 'goTY',
-    role: 'leader',
+    role: 'ROLE_DIRECTOR',
     status: 'pending',
   },
   {
@@ -768,7 +768,7 @@ const users = [
     parish: '4교구',
     email: 'nde@example.com',
     username: 'noDE',
-    role: 'leader',
+    role: 'ROLE_DIRECTOR',
     status: 'inactive',
   },
   {
@@ -797,7 +797,7 @@ const users = [
     parish: '1교구',
     email: 'sjh@example.com',
     username: 'shimJH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -827,7 +827,7 @@ const users = [
     parish: '3교구',
     email: 'gma@example.com',
     username: 'kuMA',
-    role: 'manager',
+    role: 'ROLE_SISTER_DEPUTY',
     status: 'active',
   },
   {
@@ -857,7 +857,7 @@ const users = [
     parish: '2교구',
     email: 'wtk@example.com',
     username: 'wonTK',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'active',
   },
   {
@@ -884,7 +884,7 @@ const users = [
     parish: '4교구',
     email: 'bjy@example.com',
     username: 'bangJY',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -914,7 +914,7 @@ const users = [
     parish: '1교구',
     email: 'shj@example.com',
     username: 'sunHJ',
-    role: 'leader',
+    role: 'ROLE_DIRECTOR',
     status: 'pending',
   },
   {
@@ -943,7 +943,7 @@ const users = [
     parish: '3교구',
     email: 'csy@example.com',
     username: 'chunSY',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -973,7 +973,7 @@ const users = [
     parish: '2교구',
     email: 'kmh@example.com',
     username: 'kyungMH',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'active',
   },
   {
@@ -1002,7 +1002,7 @@ const users = [
     parish: '4교구',
     email: 'bce@example.com',
     username: 'byunCE',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -1030,7 +1030,7 @@ const users = [
     parish: '1교구',
     email: 'mjs@example.com',
     username: 'maJS',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -1060,7 +1060,7 @@ const users = [
     parish: '3교구',
     email: 'bhy@example.com',
     username: 'bongHY',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'inactive',
   },
   {
@@ -1090,7 +1090,7 @@ const users = [
     parish: '2교구',
     email: 'sdy@example.com',
     username: 'sulDY',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'inactive',
   },
   {
@@ -1120,7 +1120,7 @@ const users = [
     parish: '4교구',
     email: 'emj@example.com',
     username: 'eumMJ',
-    role: 'manager',
+    role: 'ROLE_SISTER_DEPUTY',
     status: 'inactive',
   },
   {
@@ -1149,7 +1149,7 @@ const users = [
     parish: '1교구',
     email: 'tjh@example.com',
     username: 'takJH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -1179,7 +1179,7 @@ const users = [
     parish: '3교구',
     email: 'ksh@example.com',
     username: 'kwakSH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -1206,7 +1206,7 @@ const users = [
     parish: '2교구',
     email: 'jmh@example.com',
     username: 'jangMH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -1235,7 +1235,7 @@ const users = [
     parish: '4교구',
     email: 'csy2@example.com',
     username: 'chaSY',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'inactive',
   },
   {
@@ -1265,7 +1265,7 @@ const users = [
     parish: '1교구',
     email: 'jjw@example.com',
     username: 'juJW',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'inactive',
   },
   {
@@ -1295,7 +1295,7 @@ const users = [
     parish: '3교구',
     email: 'dsh@example.com',
     username: 'doSH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -1325,7 +1325,7 @@ const users = [
     parish: '2교구',
     email: 'pyr@example.com',
     username: 'pyoYR',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'pending',
   },
   {
@@ -1354,7 +1354,7 @@ const users = [
     parish: '4교구',
     email: 'sgmj@example.com',
     username: 'sagongMJ',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'pending',
   },
   {
@@ -1382,7 +1382,7 @@ const users = [
     parish: '1교구',
     email: 'ngsa@example.com',
     username: 'namgungSA',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
   {
@@ -1412,7 +1412,7 @@ const users = [
     parish: '3교구',
     email: 'jgdh@example.com',
     username: 'jegalDH',
-    role: 'manager',
+    role: 'ROLE_DEPUTY',
     status: 'pending',
   },
   {
@@ -1441,7 +1441,7 @@ const users = [
     parish: '2교구',
     email: 'hbhe@example.com',
     username: 'hwangboHE',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'inactive',
   },
   {
@@ -1471,7 +1471,7 @@ const users = [
     parish: '4교구',
     email: 'swjh@example.com',
     username: 'sunwooJH',
-    role: 'officer',
+    role: 'ROLE_EVANGELIST',
     status: 'active',
   },
 ]
